@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtUyeEkleYas = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dtpUyeEkleCinsiyet = new System.Windows.Forms.ComboBox();
+            this.cmbUyeEkleCinsiyet = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtUyeEkletutar = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -169,17 +169,17 @@
             this.label5.Text = "Cinsiyet";
             this.label5.Click += new System.EventHandler(this.label2_Click);
             // 
-            // dtpUyeEkleCinsiyet
+            // cmbUyeEkleCinsiyet
             // 
-            this.dtpUyeEkleCinsiyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(4)))), ((int)(((byte)(224)))));
-            this.dtpUyeEkleCinsiyet.FormattingEnabled = true;
-            this.dtpUyeEkleCinsiyet.Items.AddRange(new object[] {
+            this.cmbUyeEkleCinsiyet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(4)))), ((int)(((byte)(224)))));
+            this.cmbUyeEkleCinsiyet.FormattingEnabled = true;
+            this.cmbUyeEkleCinsiyet.Items.AddRange(new object[] {
             "Bay",
             "Bayan"});
-            this.dtpUyeEkleCinsiyet.Location = new System.Drawing.Point(282, 281);
-            this.dtpUyeEkleCinsiyet.Name = "dtpUyeEkleCinsiyet";
-            this.dtpUyeEkleCinsiyet.Size = new System.Drawing.Size(170, 24);
-            this.dtpUyeEkleCinsiyet.TabIndex = 11;
+            this.cmbUyeEkleCinsiyet.Location = new System.Drawing.Point(282, 281);
+            this.cmbUyeEkleCinsiyet.Name = "cmbUyeEkleCinsiyet";
+            this.cmbUyeEkleCinsiyet.Size = new System.Drawing.Size(170, 24);
+            this.cmbUyeEkleCinsiyet.TabIndex = 11;
             // 
             // label6
             // 
@@ -275,6 +275,7 @@
             this.btnUyeEkleReset.Size = new System.Drawing.Size(92, 36);
             this.btnUyeEkleReset.TabIndex = 16;
             this.btnUyeEkleReset.Text = "Reset";
+            this.btnUyeEkleReset.Click += new System.EventHandler(this.btnUyeEkleReset_Click);
             // 
             // btnUyeEkleGeri
             // 
@@ -352,7 +353,7 @@
             this.Controls.Add(this.btnUyeEkleReset);
             this.Controls.Add(this.btnUyeEkle_Ekle);
             this.Controls.Add(this.cmbUyeEkleZamanlama);
-            this.Controls.Add(this.dtpUyeEkleCinsiyet);
+            this.Controls.Add(this.cmbUyeEkleCinsiyet);
             this.Controls.Add(this.txtUyeEkleYas);
             this.Controls.Add(this.txtUyeEkletutar);
             this.Controls.Add(this.txtUyeEkleTelefon);
@@ -386,7 +387,7 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtUyeEkleYas;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox dtpUyeEkleCinsiyet;
+        private System.Windows.Forms.ComboBox cmbUyeEkleCinsiyet;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox txtUyeEkletutar;
         private System.Windows.Forms.Label label7;

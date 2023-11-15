@@ -47,19 +47,44 @@ namespace WindowsFormsApp1
                 try
                 {
                     baglanti.Open();
-                    string query = "insert into UyeTbl values('" + txtUyeEkleAdSoyad.Text + "','" + txtUyeEkleTelefon.Text +  "','" + dtpUyeEkleCinsiyet.SelectedItem.ToString() + "','" + txtUyeEkleYas.Text +"','"+ txtUyeEkletutar.Text +"','" + cmbUyeEkleZamanlama.SelectedItem.ToString() + "')";
-                    SqlCommand komut = new SqlCommand(query, baglanti);
-                    komut.ExecuteNonQuery();
+                    string query = "insert into UyeTbl values('" + txtUyeEkleAdSoyad.Text + "','" + txtUyeEkleTelefon.Text +  "','" + cmbUyeEkleCinsiyet.SelectedItem.ToString() + "','" + txtUyeEkleYas.Text +"','"+ txtUyeEkletutar.Text +"','" + cmbUyeEkleZamanlama.SelectedItem.ToString() + "')"; 
+
+                    //SQL sorgumuzu oluşturuyoruz
+
+                    SqlCommand komut = new SqlCommand(query, baglanti); 
+
+                    // Komut Satırı, query ile sorgumuzu yazıp bağlantı ile yetkilendiriyoruz
+
+                    komut.ExecuteNonQuery(); 
+
+                    //katalog işlemlerini gerçekleştirmek (örneğin, veritabanının yapısını sorgulamak veya tablolar gibi veritabanı nesneleri oluşturmak) ya da UPDATE, INSERT veya DELETE deyimlerini yürüterek veritabanındaki verileri kullanmadan DataSet değiştirmek için kullanılır
+
                     MessageBox.Show("Üye Başarıyla Eklenmiştir");
                     baglanti.Close();
+
+                    txtUyeEkleAdSoyad.Text = "";
+                    txtUyeEkleTelefon.Text = "";
+                    txtUyeEkletutar.Text = "";
+                    txtUyeEkleYas.Text = "";
+                    cmbUyeEkleZamanlama.Text = "";
+                    cmbUyeEkleCinsiyet.Text = "";
                 } 
-                catch(Exception ex)
+                catch(Exception ex) 
+                // Bazı programlar yazılırken hata vermediği halde çalışma sırasında hata verebilir. Bu hataları kontrol etme işlemine İstisnai Durum Yönetimi (Exception Handling)denir
                 {
                     MessageBox.Show("ex.Message");
                 }
             }
         }
+
+        private void btnUyeEkleReset_Click(object sender, EventArgs e)
+        {
+            txtUyeEkleAdSoyad.Text = "";
+            txtUyeEkleTelefon.Text = "";
+            txtUyeEkletutar.Text = "";
+            txtUyeEkleYas.Text = "";
+            cmbUyeEkleZamanlama.Text = "";
+            cmbUyeEkleCinsiyet.Text = "";
+        }
     }
 }
-
-//Data Source = .; Initial Catalog = Hafta6; Integrated Security = true

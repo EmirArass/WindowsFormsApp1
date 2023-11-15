@@ -86,5 +86,12 @@ namespace WindowsFormsApp1
             cmbUyeEkleZamanlama.Text = "";
             cmbUyeEkleCinsiyet.Text = "";
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Login log = new Login();
+            log.Show();
+            this.Hide();
+        }
     }
 }

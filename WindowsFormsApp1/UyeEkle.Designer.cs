@@ -307,11 +307,12 @@
             this.btnGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGeri.ForeColor = System.Drawing.Color.White;
-            this.btnGeri.Location = new System.Drawing.Point(538, 418);
+            this.btnGeri.Location = new System.Drawing.Point(535, 428);
             this.btnGeri.Name = "btnGeri";
             this.btnGeri.Size = new System.Drawing.Size(137, 36);
             this.btnGeri.TabIndex = 16;
             this.btnGeri.Text = "Geri";
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
             // guna2Button1
             // 

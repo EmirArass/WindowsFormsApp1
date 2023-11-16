@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuncelleSil));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.btnGeri = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnGuncelleGeri = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnGuncelle_Sil = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnGuncelleReset = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnGuncelle_Guncelle = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cmbGuncelleZamanlama = new System.Windows.Forms.ComboBox();
@@ -50,10 +50,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.grdGuncelleSil = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grdGuncelleSil)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -90,24 +90,26 @@
             this.btnGeri.Size = new System.Drawing.Size(137, 27);
             this.btnGeri.TabIndex = 34;
             this.btnGeri.Text = "Geri";
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
-            // btnGuncelleGeri
+            // btnGuncelle_Sil
             // 
-            this.btnGuncelleGeri.BorderRadius = 8;
-            this.btnGuncelleGeri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuncelleGeri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuncelleGeri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuncelleGeri.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuncelleGeri.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuncelleGeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnGuncelleGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnGuncelleGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnGuncelleGeri.ForeColor = System.Drawing.Color.White;
-            this.btnGuncelleGeri.Location = new System.Drawing.Point(202, 467);
-            this.btnGuncelleGeri.Name = "btnGuncelleGeri";
-            this.btnGuncelleGeri.Size = new System.Drawing.Size(92, 27);
-            this.btnGuncelleGeri.TabIndex = 33;
-            this.btnGuncelleGeri.Text = "Geri";
+            this.btnGuncelle_Sil.BorderRadius = 8;
+            this.btnGuncelle_Sil.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuncelle_Sil.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuncelle_Sil.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuncelle_Sil.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuncelle_Sil.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuncelle_Sil.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuncelle_Sil.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGuncelle_Sil.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGuncelle_Sil.ForeColor = System.Drawing.Color.White;
+            this.btnGuncelle_Sil.Location = new System.Drawing.Point(202, 467);
+            this.btnGuncelle_Sil.Name = "btnGuncelle_Sil";
+            this.btnGuncelle_Sil.Size = new System.Drawing.Size(92, 27);
+            this.btnGuncelle_Sil.TabIndex = 33;
+            this.btnGuncelle_Sil.Text = "Sil";
+            this.btnGuncelle_Sil.Click += new System.EventHandler(this.btnGuncelle_Sil_Click);
             // 
             // btnGuncelleReset
             // 
@@ -126,6 +128,7 @@
             this.btnGuncelleReset.Size = new System.Drawing.Size(92, 27);
             this.btnGuncelleReset.TabIndex = 32;
             this.btnGuncelleReset.Text = "Reset";
+            this.btnGuncelleReset.Click += new System.EventHandler(this.btnGuncelleReset_Click);
             // 
             // btnGuncelle_Guncelle
             // 
@@ -144,6 +147,7 @@
             this.btnGuncelle_Guncelle.Size = new System.Drawing.Size(92, 27);
             this.btnGuncelle_Guncelle.TabIndex = 31;
             this.btnGuncelle_Guncelle.Text = "Güncelle";
+            this.btnGuncelle_Guncelle.Click += new System.EventHandler(this.btnGuncelle_Guncelle_Click);
             // 
             // cmbGuncelleZamanlama
             // 
@@ -188,7 +192,7 @@
             this.txtGuncelleYas.PasswordChar = '\0';
             this.txtGuncelleYas.PlaceholderText = "";
             this.txtGuncelleYas.SelectedText = "";
-            this.txtGuncelleYas.Size = new System.Drawing.Size(170, 25);
+            this.txtGuncelleYas.Size = new System.Drawing.Size(170, 32);
             this.txtGuncelleYas.TabIndex = 28;
             // 
             // txtGuncelleTutar
@@ -208,7 +212,7 @@
             this.txtGuncelleTutar.PasswordChar = '\0';
             this.txtGuncelleTutar.PlaceholderText = "";
             this.txtGuncelleTutar.SelectedText = "";
-            this.txtGuncelleTutar.Size = new System.Drawing.Size(170, 25);
+            this.txtGuncelleTutar.Size = new System.Drawing.Size(170, 32);
             this.txtGuncelleTutar.TabIndex = 27;
             // 
             // txtGuncelleSilTelefon
@@ -228,7 +232,7 @@
             this.txtGuncelleSilTelefon.PasswordChar = '\0';
             this.txtGuncelleSilTelefon.PlaceholderText = "";
             this.txtGuncelleSilTelefon.SelectedText = "";
-            this.txtGuncelleSilTelefon.Size = new System.Drawing.Size(170, 25);
+            this.txtGuncelleSilTelefon.Size = new System.Drawing.Size(170, 32);
             this.txtGuncelleSilTelefon.TabIndex = 26;
             // 
             // label6
@@ -292,7 +296,7 @@
             this.txtGuncelleSilUyeAdSoyad.PasswordChar = '\0';
             this.txtGuncelleSilUyeAdSoyad.PlaceholderText = "";
             this.txtGuncelleSilUyeAdSoyad.SelectedText = "";
-            this.txtGuncelleSilUyeAdSoyad.Size = new System.Drawing.Size(170, 25);
+            this.txtGuncelleSilUyeAdSoyad.Size = new System.Drawing.Size(170, 32);
             this.txtGuncelleSilUyeAdSoyad.TabIndex = 25;
             // 
             // label5
@@ -328,57 +332,58 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Fitness Center";
             // 
-            // guna2DataGridView1
+            // grdGuncelleSil
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(380, 171);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(758, 392);
-            this.guna2DataGridView1.TabIndex = 36;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.grdGuncelleSil.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdGuncelleSil.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.grdGuncelleSil.ColumnHeadersHeight = 4;
+            this.grdGuncelleSil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grdGuncelleSil.DefaultCellStyle = dataGridViewCellStyle6;
+            this.grdGuncelleSil.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.grdGuncelleSil.Location = new System.Drawing.Point(380, 171);
+            this.grdGuncelleSil.Name = "grdGuncelleSil";
+            this.grdGuncelleSil.RowHeadersVisible = false;
+            this.grdGuncelleSil.RowHeadersWidth = 51;
+            this.grdGuncelleSil.RowTemplate.Height = 24;
+            this.grdGuncelleSil.Size = new System.Drawing.Size(758, 392);
+            this.grdGuncelleSil.TabIndex = 36;
+            this.grdGuncelleSil.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.grdGuncelleSil.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.grdGuncelleSil.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.grdGuncelleSil.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.grdGuncelleSil.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.grdGuncelleSil.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.grdGuncelleSil.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.grdGuncelleSil.ThemeStyle.HeaderStyle.Height = 4;
+            this.grdGuncelleSil.ThemeStyle.ReadOnly = false;
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.Height = 24;
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.grdGuncelleSil.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.grdGuncelleSil.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdGuncelleSil_CellContentClick);
             // 
             // label8
             // 
@@ -408,10 +413,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1150, 620);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.grdGuncelleSil);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnGeri);
-            this.Controls.Add(this.btnGuncelleGeri);
+            this.Controls.Add(this.btnGuncelle_Sil);
             this.Controls.Add(this.btnGuncelleReset);
             this.Controls.Add(this.btnGuncelle_Guncelle);
             this.Controls.Add(this.cmbGuncelleZamanlama);
@@ -433,7 +438,8 @@
             this.Name = "GuncelleSil";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuncelleSil";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.GuncelleSil_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.grdGuncelleSil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,7 +449,7 @@
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2GradientButton btnGeri;
-        private Guna.UI2.WinForms.Guna2GradientButton btnGuncelleGeri;
+        private Guna.UI2.WinForms.Guna2GradientButton btnGuncelle_Sil;
         private Guna.UI2.WinForms.Guna2GradientButton btnGuncelleReset;
         private Guna.UI2.WinForms.Guna2GradientButton btnGuncelle_Guncelle;
         private System.Windows.Forms.ComboBox cmbGuncelleZamanlama;
@@ -459,7 +465,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView grdGuncelleSil;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
     }

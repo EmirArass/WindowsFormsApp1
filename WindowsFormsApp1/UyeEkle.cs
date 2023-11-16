@@ -89,8 +89,8 @@ namespace WindowsFormsApp1
 
         private void btnGeri_Click(object sender, EventArgs e)
         {
-            Login log = new Login();
-            log.Show();
+            Anasayfa anasayfa = new Anasayfa();
+            anasayfa.Show();
             this.Hide();
         }
     }

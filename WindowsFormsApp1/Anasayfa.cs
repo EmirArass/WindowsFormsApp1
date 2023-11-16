@@ -21,5 +21,26 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void btnAnasayfaUyeEkle_Click(object sender, EventArgs e)
+        {
+            UyeEkle uyeekle = new UyeEkle();
+            uyeekle.Show();
+            this.Hide();
+        }
+
+        private void btnAnasayfaGuncelle_Click(object sender, EventArgs e)
+        {
+            GuncelleSil guncelleSil = new GuncelleSil();
+            guncelleSil.Show();
+            this.Hide();
+        }
+
+        private void btnAnasayfaOde_Click(object sender, EventArgs e)
+        {
+            Odemeler odeme = new Odemeler();
+            odeme.Show();
+            this.Hide();
+        }
     }
 }

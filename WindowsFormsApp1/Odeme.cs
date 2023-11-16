@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class btnOdeme_Odeme : Form
+    public partial class Odemeler : Form
     {
-        public btnOdeme_Odeme()
+        public Odemeler()
         {
             InitializeComponent();
         }
@@ -20,6 +20,13 @@ namespace WindowsFormsApp1
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa anasayfa = new Anasayfa();
+            anasayfa.Show();
+            this.Hide();
         }
     }
 }

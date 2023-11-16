@@ -55,7 +55,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.grdUyeleriListele.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.grdUyeleriListele.ColumnHeadersHeight = 4;
+            this.grdUyeleriListele.ColumnHeadersHeight = 25;
             this.grdUyeleriListele.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -70,7 +70,7 @@
             this.grdUyeleriListele.Name = "grdUyeleriListele";
             this.grdUyeleriListele.RowHeadersVisible = false;
             this.grdUyeleriListele.RowHeadersWidth = 51;
-            this.grdUyeleriListele.RowTemplate.Height = 24;
+            this.grdUyeleriListele.RowTemplate.Height = 25;
             this.grdUyeleriListele.Size = new System.Drawing.Size(758, 392);
             this.grdUyeleriListele.TabIndex = 37;
             this.grdUyeleriListele.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -80,19 +80,19 @@
             this.grdUyeleriListele.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.grdUyeleriListele.ThemeStyle.BackColor = System.Drawing.Color.White;
             this.grdUyeleriListele.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.grdUyeleriListele.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.grdUyeleriListele.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.grdUyeleriListele.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.grdUyeleriListele.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grdUyeleriListele.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.grdUyeleriListele.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.grdUyeleriListele.ThemeStyle.HeaderStyle.Height = 4;
+            this.grdUyeleriListele.ThemeStyle.HeaderStyle.Height = 25;
             this.grdUyeleriListele.ThemeStyle.ReadOnly = false;
             this.grdUyeleriListele.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.grdUyeleriListele.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.grdUyeleriListele.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.grdUyeleriListele.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.grdUyeleriListele.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.grdUyeleriListele.ThemeStyle.RowsStyle.Height = 24;
-            this.grdUyeleriListele.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.grdUyeleriListele.ThemeStyle.RowsStyle.Height = 25;
+            this.grdUyeleriListele.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Crimson;
             this.grdUyeleriListele.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // label8
@@ -225,6 +225,7 @@
             this.Name = "UyeleriListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UyeleriListele";
+            this.Load += new System.EventHandler(this.UyeleriListele_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdUyeleriListele)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

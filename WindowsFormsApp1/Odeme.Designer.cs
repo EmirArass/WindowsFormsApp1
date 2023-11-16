@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class btnOdeme_Odeme
+    partial class Odemeler
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnOdeme_Odeme));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Odemeler));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,9 +43,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnOdemeGeri = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnOdemeReset = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnOdeme_Odeme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dgOdemeler = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btnGeri = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgOdemeler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -207,23 +208,23 @@
             this.btnOdemeReset.TabIndex = 49;
             this.btnOdemeReset.Text = "Reset";
             // 
-            // guna2GradientButton3
+            // btnOdeme_Odeme
             // 
-            this.guna2GradientButton3.BorderRadius = 8;
-            this.guna2GradientButton3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2GradientButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2GradientButton3.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton3.Location = new System.Drawing.Point(208, 423);
-            this.guna2GradientButton3.Name = "guna2GradientButton3";
-            this.guna2GradientButton3.Size = new System.Drawing.Size(92, 27);
-            this.guna2GradientButton3.TabIndex = 51;
-            this.guna2GradientButton3.Text = "Ödeme";
+            this.btnOdeme_Odeme.BorderRadius = 8;
+            this.btnOdeme_Odeme.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOdeme_Odeme.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOdeme_Odeme.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOdeme_Odeme.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOdeme_Odeme.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOdeme_Odeme.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnOdeme_Odeme.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnOdeme_Odeme.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOdeme_Odeme.ForeColor = System.Drawing.Color.White;
+            this.btnOdeme_Odeme.Location = new System.Drawing.Point(208, 423);
+            this.btnOdeme_Odeme.Name = "btnOdeme_Odeme";
+            this.btnOdeme_Odeme.Size = new System.Drawing.Size(92, 27);
+            this.btnOdeme_Odeme.TabIndex = 51;
+            this.btnOdeme_Odeme.Text = "Ödeme";
             // 
             // dgOdemeler
             // 
@@ -289,14 +290,34 @@
             this.guna2CirclePictureBox1.TabIndex = 53;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
-            // btnOdeme_Odeme
+            // btnGeri
+            // 
+            this.btnGeri.BorderRadius = 8;
+            this.btnGeri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeri.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeri.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGeri.ForeColor = System.Drawing.Color.White;
+            this.btnGeri.Location = new System.Drawing.Point(80, 456);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(137, 27);
+            this.btnGeri.TabIndex = 54;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
+            // 
+            // Odemeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 620);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.dgOdemeler);
-            this.Controls.Add(this.guna2GradientButton3);
+            this.Controls.Add(this.btnOdeme_Odeme);
             this.Controls.Add(this.btnOdemeGeri);
             this.Controls.Add(this.btnOdemeReset);
             this.Controls.Add(this.dtpOdeme_OdemeAyı);
@@ -309,7 +330,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "btnOdeme_Odeme";
+            this.Name = "Odemeler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Odeme";
             ((System.ComponentModel.ISupportInitialize)(this.dgOdemeler)).EndInit();
@@ -332,8 +353,9 @@
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2GradientButton btnOdemeGeri;
         private Guna.UI2.WinForms.Guna2GradientButton btnOdemeReset;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOdeme_Odeme;
         private Guna.UI2.WinForms.Guna2DataGridView dgOdemeler;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2GradientButton btnGeri;
     }
 }

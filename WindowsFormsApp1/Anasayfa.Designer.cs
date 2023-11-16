@@ -36,7 +36,6 @@
             this.btnAnasayfaUyeEkle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAnasayfaOde = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnAnasayfaGuncelle = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnAnasayfaSil = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -62,7 +61,6 @@
             this.panel1.Controls.Add(this.btnAnasayfaUyeEkle);
             this.panel1.Controls.Add(this.btnAnasayfaOde);
             this.panel1.Controls.Add(this.btnAnasayfaGuncelle);
-            this.panel1.Controls.Add(this.btnAnasayfaSil);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -115,12 +113,13 @@
             this.btnAnasayfaUyeEkle.IdleFillColor = System.Drawing.Color.White;
             this.btnAnasayfaUyeEkle.IdleForecolor = System.Drawing.Color.DarkRed;
             this.btnAnasayfaUyeEkle.IdleLineColor = System.Drawing.Color.Snow;
-            this.btnAnasayfaUyeEkle.Location = new System.Drawing.Point(278, 24);
+            this.btnAnasayfaUyeEkle.Location = new System.Drawing.Point(342, 14);
             this.btnAnasayfaUyeEkle.Margin = new System.Windows.Forms.Padding(5);
             this.btnAnasayfaUyeEkle.Name = "btnAnasayfaUyeEkle";
-            this.btnAnasayfaUyeEkle.Size = new System.Drawing.Size(115, 50);
+            this.btnAnasayfaUyeEkle.Size = new System.Drawing.Size(149, 62);
             this.btnAnasayfaUyeEkle.TabIndex = 1;
             this.btnAnasayfaUyeEkle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAnasayfaUyeEkle.Click += new System.EventHandler(this.btnAnasayfaUyeEkle_Click);
             // 
             // btnAnasayfaOde
             // 
@@ -140,12 +139,13 @@
             this.btnAnasayfaOde.IdleFillColor = System.Drawing.Color.White;
             this.btnAnasayfaOde.IdleForecolor = System.Drawing.Color.DarkRed;
             this.btnAnasayfaOde.IdleLineColor = System.Drawing.Color.Snow;
-            this.btnAnasayfaOde.Location = new System.Drawing.Point(752, 24);
+            this.btnAnasayfaOde.Location = new System.Drawing.Point(680, 14);
             this.btnAnasayfaOde.Margin = new System.Windows.Forms.Padding(5);
             this.btnAnasayfaOde.Name = "btnAnasayfaOde";
-            this.btnAnasayfaOde.Size = new System.Drawing.Size(115, 50);
+            this.btnAnasayfaOde.Size = new System.Drawing.Size(149, 62);
             this.btnAnasayfaOde.TabIndex = 1;
             this.btnAnasayfaOde.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAnasayfaOde.Click += new System.EventHandler(this.btnAnasayfaOde_Click);
             // 
             // btnAnasayfaGuncelle
             // 
@@ -156,7 +156,7 @@
             this.btnAnasayfaGuncelle.ActiveLineColor = System.Drawing.Color.White;
             this.btnAnasayfaGuncelle.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAnasayfaGuncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnasayfaGuncelle.BackgroundImage")));
-            this.btnAnasayfaGuncelle.ButtonText = "Güncelle";
+            this.btnAnasayfaGuncelle.ButtonText = "Güncelle Sil";
             this.btnAnasayfaGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAnasayfaGuncelle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnasayfaGuncelle.ForeColor = System.Drawing.Color.SeaGreen;
@@ -165,37 +165,13 @@
             this.btnAnasayfaGuncelle.IdleFillColor = System.Drawing.Color.White;
             this.btnAnasayfaGuncelle.IdleForecolor = System.Drawing.Color.DarkRed;
             this.btnAnasayfaGuncelle.IdleLineColor = System.Drawing.Color.Snow;
-            this.btnAnasayfaGuncelle.Location = new System.Drawing.Point(436, 24);
+            this.btnAnasayfaGuncelle.Location = new System.Drawing.Point(511, 14);
             this.btnAnasayfaGuncelle.Margin = new System.Windows.Forms.Padding(5);
             this.btnAnasayfaGuncelle.Name = "btnAnasayfaGuncelle";
-            this.btnAnasayfaGuncelle.Size = new System.Drawing.Size(115, 50);
+            this.btnAnasayfaGuncelle.Size = new System.Drawing.Size(149, 62);
             this.btnAnasayfaGuncelle.TabIndex = 1;
             this.btnAnasayfaGuncelle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAnasayfaSil
-            // 
-            this.btnAnasayfaSil.ActiveBorderThickness = 1;
-            this.btnAnasayfaSil.ActiveCornerRadius = 25;
-            this.btnAnasayfaSil.ActiveFillColor = System.Drawing.Color.Crimson;
-            this.btnAnasayfaSil.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAnasayfaSil.ActiveLineColor = System.Drawing.Color.White;
-            this.btnAnasayfaSil.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAnasayfaSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAnasayfaSil.BackgroundImage")));
-            this.btnAnasayfaSil.ButtonText = "Sil";
-            this.btnAnasayfaSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnasayfaSil.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnasayfaSil.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnAnasayfaSil.IdleBorderThickness = 1;
-            this.btnAnasayfaSil.IdleCornerRadius = 20;
-            this.btnAnasayfaSil.IdleFillColor = System.Drawing.Color.White;
-            this.btnAnasayfaSil.IdleForecolor = System.Drawing.Color.DarkRed;
-            this.btnAnasayfaSil.IdleLineColor = System.Drawing.Color.Snow;
-            this.btnAnasayfaSil.Location = new System.Drawing.Point(594, 24);
-            this.btnAnasayfaSil.Margin = new System.Windows.Forms.Padding(5);
-            this.btnAnasayfaSil.Name = "btnAnasayfaSil";
-            this.btnAnasayfaSil.Size = new System.Drawing.Size(115, 50);
-            this.btnAnasayfaSil.TabIndex = 1;
-            this.btnAnasayfaSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAnasayfaGuncelle.Click += new System.EventHandler(this.btnAnasayfaGuncelle_Click);
             // 
             // Anasayfa
             // 
@@ -224,7 +200,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnAnasayfaUyeEkle;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAnasayfaOde;
         private Bunifu.Framework.UI.BunifuThinButton2 btnAnasayfaGuncelle;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAnasayfaSil;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -36,17 +36,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtOdemeUcret = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtOdemeAd = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.dtpOdeme_OdemeAyı = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnOdemeGeri = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnOdemeReset = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnOdeme_Odeme = new Guna.UI2.WinForms.Guna2GradientButton();
             this.dgOdemeler = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnGeri = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.cmbOdemeAdSoyad = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgOdemeler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,11 +53,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(10)))), ((int)(((byte)(155)))));
-            this.label8.Location = new System.Drawing.Point(475, 56);
+            this.label8.Location = new System.Drawing.Point(473, 66);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 34);
+            this.label8.Size = new System.Drawing.Size(110, 23);
             this.label8.TabIndex = 40;
             this.label8.Text = "Ödemeler";
             // 
@@ -103,26 +102,6 @@
             this.label3.Size = new System.Drawing.Size(62, 23);
             this.label3.TabIndex = 42;
             this.label3.Text = "Ücret";
-            // 
-            // txtOdemeAd
-            // 
-            this.txtOdemeAd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOdemeAd.DefaultText = "";
-            this.txtOdemeAd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtOdemeAd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtOdemeAd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtOdemeAd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtOdemeAd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtOdemeAd.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            this.txtOdemeAd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtOdemeAd.Location = new System.Drawing.Point(57, 165);
-            this.txtOdemeAd.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.txtOdemeAd.Name = "txtOdemeAd";
-            this.txtOdemeAd.PasswordChar = '\0';
-            this.txtOdemeAd.PlaceholderText = "";
-            this.txtOdemeAd.SelectedText = "";
-            this.txtOdemeAd.Size = new System.Drawing.Size(170, 28);
-            this.txtOdemeAd.TabIndex = 46;
             // 
             // label2
             // 
@@ -172,24 +151,6 @@
             this.label4.TabIndex = 42;
             this.label4.Text = "Ödeme Ayı";
             // 
-            // btnOdemeGeri
-            // 
-            this.btnOdemeGeri.BorderRadius = 8;
-            this.btnOdemeGeri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnOdemeGeri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnOdemeGeri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOdemeGeri.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnOdemeGeri.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnOdemeGeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnOdemeGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnOdemeGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnOdemeGeri.ForeColor = System.Drawing.Color.White;
-            this.btnOdemeGeri.Location = new System.Drawing.Point(12, 423);
-            this.btnOdemeGeri.Name = "btnOdemeGeri";
-            this.btnOdemeGeri.Size = new System.Drawing.Size(92, 27);
-            this.btnOdemeGeri.TabIndex = 50;
-            this.btnOdemeGeri.Text = "Geri";
-            // 
             // btnOdemeReset
             // 
             this.btnOdemeReset.BorderRadius = 8;
@@ -202,11 +163,12 @@
             this.btnOdemeReset.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnOdemeReset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnOdemeReset.ForeColor = System.Drawing.Color.White;
-            this.btnOdemeReset.Location = new System.Drawing.Point(110, 423);
+            this.btnOdemeReset.Location = new System.Drawing.Point(41, 423);
             this.btnOdemeReset.Name = "btnOdemeReset";
             this.btnOdemeReset.Size = new System.Drawing.Size(92, 27);
             this.btnOdemeReset.TabIndex = 49;
             this.btnOdemeReset.Text = "Reset";
+            this.btnOdemeReset.Click += new System.EventHandler(this.btnOdemeReset_Click);
             // 
             // btnOdeme_Odeme
             // 
@@ -220,11 +182,12 @@
             this.btnOdeme_Odeme.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnOdeme_Odeme.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnOdeme_Odeme.ForeColor = System.Drawing.Color.White;
-            this.btnOdeme_Odeme.Location = new System.Drawing.Point(208, 423);
+            this.btnOdeme_Odeme.Location = new System.Drawing.Point(139, 423);
             this.btnOdeme_Odeme.Name = "btnOdeme_Odeme";
             this.btnOdeme_Odeme.Size = new System.Drawing.Size(92, 27);
             this.btnOdeme_Odeme.TabIndex = 51;
             this.btnOdeme_Odeme.Text = "Ödeme";
+            this.btnOdeme_Odeme.Click += new System.EventHandler(this.btnOdeme_Odeme_Click);
             // 
             // dgOdemeler
             // 
@@ -249,12 +212,12 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgOdemeler.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgOdemeler.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgOdemeler.Location = new System.Drawing.Point(380, 183);
+            this.dgOdemeler.Location = new System.Drawing.Point(319, 165);
             this.dgOdemeler.Name = "dgOdemeler";
             this.dgOdemeler.RowHeadersVisible = false;
             this.dgOdemeler.RowHeadersWidth = 51;
             this.dgOdemeler.RowTemplate.Height = 24;
-            this.dgOdemeler.Size = new System.Drawing.Size(758, 392);
+            this.dgOdemeler.Size = new System.Drawing.Size(819, 392);
             this.dgOdemeler.TabIndex = 52;
             this.dgOdemeler.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgOdemeler.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -277,16 +240,18 @@
             this.dgOdemeler.ThemeStyle.RowsStyle.Height = 24;
             this.dgOdemeler.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgOdemeler.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgOdemeler.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgOdemeler_CellContentClick);
             // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(380, 113);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(589, 59);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(41, 38);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 53;
             this.guna2CirclePictureBox1.TabStop = false;
             // 
@@ -302,30 +267,38 @@
             this.btnGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGeri.ForeColor = System.Drawing.Color.White;
-            this.btnGeri.Location = new System.Drawing.Point(80, 456);
+            this.btnGeri.Location = new System.Drawing.Point(57, 456);
             this.btnGeri.Name = "btnGeri";
             this.btnGeri.Size = new System.Drawing.Size(137, 27);
             this.btnGeri.TabIndex = 54;
             this.btnGeri.Text = "Geri";
             this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
+            // cmbOdemeAdSoyad
+            // 
+            this.cmbOdemeAdSoyad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(4)))), ((int)(((byte)(224)))));
+            this.cmbOdemeAdSoyad.FormattingEnabled = true;
+            this.cmbOdemeAdSoyad.Location = new System.Drawing.Point(61, 165);
+            this.cmbOdemeAdSoyad.Name = "cmbOdemeAdSoyad";
+            this.cmbOdemeAdSoyad.Size = new System.Drawing.Size(170, 24);
+            this.cmbOdemeAdSoyad.TabIndex = 55;
+            // 
             // Odemeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 620);
+            this.Controls.Add(this.cmbOdemeAdSoyad);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.dgOdemeler);
             this.Controls.Add(this.btnOdeme_Odeme);
-            this.Controls.Add(this.btnOdemeGeri);
             this.Controls.Add(this.btnOdemeReset);
             this.Controls.Add(this.dtpOdeme_OdemeAyı);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.txtOdemeUcret);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtOdemeAd);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
@@ -333,6 +306,7 @@
             this.Name = "Odemeler";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Odeme";
+            this.Load += new System.EventHandler(this.Odemeler_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgOdemeler)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -346,16 +320,15 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox txtOdemeUcret;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtOdemeAd;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.DateTimePicker dtpOdeme_OdemeAyı;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2GradientButton btnOdemeGeri;
         private Guna.UI2.WinForms.Guna2GradientButton btnOdemeReset;
         private Guna.UI2.WinForms.Guna2GradientButton btnOdeme_Odeme;
         private Guna.UI2.WinForms.Guna2DataGridView dgOdemeler;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnGeri;
+        private System.Windows.Forms.ComboBox cmbOdemeAdSoyad;
     }
 }

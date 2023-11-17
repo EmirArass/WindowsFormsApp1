@@ -39,7 +39,7 @@
             this.txtUyeListeleAd = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnUyeListeleAra = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnUyeListeleReset = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.buttonUyeListeleGeri = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnGeri = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.grdUyeleriListele)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +66,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.grdUyeleriListele.DefaultCellStyle = dataGridViewCellStyle3;
             this.grdUyeleriListele.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.grdUyeleriListele.Location = new System.Drawing.Point(189, 187);
+            this.grdUyeleriListele.Location = new System.Drawing.Point(189, 152);
             this.grdUyeleriListele.Name = "grdUyeleriListele";
             this.grdUyeleriListele.RowHeadersVisible = false;
             this.grdUyeleriListele.RowHeadersWidth = 51;
@@ -145,7 +145,7 @@
             this.txtUyeListeleAd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUyeListeleAd.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtUyeListeleAd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUyeListeleAd.Location = new System.Drawing.Point(483, 154);
+            this.txtUyeListeleAd.Location = new System.Drawing.Point(483, 119);
             this.txtUyeListeleAd.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtUyeListeleAd.Name = "txtUyeListeleAd";
             this.txtUyeListeleAd.PasswordChar = '\0';
@@ -166,11 +166,12 @@
             this.btnUyeListeleAra.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnUyeListeleAra.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUyeListeleAra.ForeColor = System.Drawing.Color.White;
-            this.btnUyeListeleAra.Location = new System.Drawing.Point(659, 154);
+            this.btnUyeListeleAra.Location = new System.Drawing.Point(659, 119);
             this.btnUyeListeleAra.Name = "btnUyeListeleAra";
             this.btnUyeListeleAra.Size = new System.Drawing.Size(92, 27);
             this.btnUyeListeleAra.TabIndex = 42;
             this.btnUyeListeleAra.Text = "Ara";
+            this.btnUyeListeleAra.Click += new System.EventHandler(this.btnUyeListeleAra_Click);
             // 
             // btnUyeListeleReset
             // 
@@ -184,36 +185,37 @@
             this.btnUyeListeleReset.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnUyeListeleReset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUyeListeleReset.ForeColor = System.Drawing.Color.White;
-            this.btnUyeListeleReset.Location = new System.Drawing.Point(757, 154);
+            this.btnUyeListeleReset.Location = new System.Drawing.Point(757, 119);
             this.btnUyeListeleReset.Name = "btnUyeListeleReset";
             this.btnUyeListeleReset.Size = new System.Drawing.Size(92, 27);
             this.btnUyeListeleReset.TabIndex = 43;
             this.btnUyeListeleReset.Text = "Reset";
             // 
-            // buttonUyeListeleGeri
+            // btnGeri
             // 
-            this.buttonUyeListeleGeri.BorderRadius = 8;
-            this.buttonUyeListeleGeri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.buttonUyeListeleGeri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.buttonUyeListeleGeri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonUyeListeleGeri.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.buttonUyeListeleGeri.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.buttonUyeListeleGeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonUyeListeleGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.buttonUyeListeleGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buttonUyeListeleGeri.ForeColor = System.Drawing.Color.White;
-            this.buttonUyeListeleGeri.Location = new System.Drawing.Point(189, 585);
-            this.buttonUyeListeleGeri.Name = "buttonUyeListeleGeri";
-            this.buttonUyeListeleGeri.Size = new System.Drawing.Size(92, 27);
-            this.buttonUyeListeleGeri.TabIndex = 44;
-            this.buttonUyeListeleGeri.Text = "Geri";
+            this.btnGeri.BorderRadius = 8;
+            this.btnGeri.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeri.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGeri.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeri.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGeri.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGeri.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGeri.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGeri.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGeri.ForeColor = System.Drawing.Color.White;
+            this.btnGeri.Location = new System.Drawing.Point(189, 550);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(137, 36);
+            this.btnGeri.TabIndex = 44;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
             // UyeleriListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 620);
-            this.Controls.Add(this.buttonUyeListeleGeri);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnUyeListeleReset);
             this.Controls.Add(this.btnUyeListeleAra);
             this.Controls.Add(this.txtUyeListeleAd);
@@ -241,6 +243,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUyeListeleAd;
         private Guna.UI2.WinForms.Guna2GradientButton btnUyeListeleAra;
         private Guna.UI2.WinForms.Guna2GradientButton btnUyeListeleReset;
-        private Guna.UI2.WinForms.Guna2GradientButton buttonUyeListeleGeri;
+        private Guna.UI2.WinForms.Guna2GradientButton btnGeri;
     }
 }

@@ -32,6 +32,18 @@ namespace WindowsFormsApp1
             baglanti.Close();
         }
 
+        private void OdemeFiltreleme()
+        {
+            baglanti.Open();
+            string query = "select * from OdemeTbl where OdemeUye like '%"+ txtOdemeAra.Text +"%'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, baglanti);
+            SqlCommandBuilder builder = new SqlCommandBuilder();    
+            var ds = new DataSet();
+            sda.Fill(ds);
+            dgOdemeler.DataSource = ds.Tables[0]; ;
+            baglanti.Close();
+        }
+
         private void FillName()
         {
             baglanti.Open();
@@ -103,6 +115,12 @@ namespace WindowsFormsApp1
         private void dgOdemeler_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnOdemeAra_Click(object sender, EventArgs e)
+        {
+            OdemeFiltreleme();
+            txtOdemeAra.Text = "";
         }
     }
 }

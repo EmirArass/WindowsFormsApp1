@@ -60,6 +60,7 @@
             this.btnLoginReset.Size = new System.Drawing.Size(105, 56);
             this.btnLoginReset.TabIndex = 14;
             this.btnLoginReset.Text = "Reset";
+            this.btnLoginReset.Click += new System.EventHandler(this.btnLoginReset_Click);
             // 
             // btnLoginLogin
             // 
@@ -78,6 +79,7 @@
             this.btnLoginLogin.Size = new System.Drawing.Size(105, 56);
             this.btnLoginLogin.TabIndex = 15;
             this.btnLoginLogin.Text = "Login";
+            this.btnLoginLogin.Click += new System.EventHandler(this.btnLoginLogin_Click);
             // 
             // guna2CirclePictureBox2
             // 
@@ -130,7 +132,7 @@
             this.txtLoginPassword.Location = new System.Drawing.Point(577, 281);
             this.txtLoginPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtLoginPassword.Name = "txtLoginPassword";
-            this.txtLoginPassword.PasswordChar = '\0';
+            this.txtLoginPassword.PasswordChar = '•';
             this.txtLoginPassword.PlaceholderText = "";
             this.txtLoginPassword.SelectedText = "";
             this.txtLoginPassword.Size = new System.Drawing.Size(281, 58);

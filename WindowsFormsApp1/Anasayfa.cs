@@ -42,5 +42,12 @@ namespace WindowsFormsApp1
             odeme.Show();
             this.Hide();
         }
+
+        private void btnAnsayfaUyeGoster_Click(object sender, EventArgs e)
+        {
+            UyeleriListele uyeleriListele = new UyeleriListele();
+            uyeleriListele.Show();
+            this.Hide();
+        }
     }
 }

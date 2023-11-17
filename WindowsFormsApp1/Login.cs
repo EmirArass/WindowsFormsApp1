@@ -21,5 +21,31 @@ namespace WindowsFormsApp1
         {
             Application.Exit();
         }
+
+        private void btnLoginReset_Click(object sender, EventArgs e)
+        {
+            txtLoginPassword.Text = "";
+            txtLogin_Login.Text = "";
+        }
+
+        private void btnLoginLogin_Click(object sender, EventArgs e)
+        {
+            if (txtLogin_Login.Text == "" || txtLoginPassword.Text== "")
+            {
+                MessageBox.Show("Lütfen Kullanıcı Adı Ve Şifre giriniz");
+            }
+
+            else if (txtLoginPassword.Text == "123456789" && txtLogin_Login.Text == "admin")
+            {
+                Anasayfa anasayfa = new Anasayfa();
+                anasayfa.Show();
+                this.Hide();
+            }
+
+            else
+            {
+                MessageBox.Show("Kullanıcı Adı Veya Şifre Hatalıdır");
+            }
+        }
     }
 }

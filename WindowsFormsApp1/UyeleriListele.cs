@@ -31,6 +31,18 @@ namespace WindowsFormsApp1
 
         }
 
+        private void UyeFiltreleme()
+        {
+            baglanti.Open();
+            string query = "select * from UyeTbl where UyeAdsoyad like '%" + txtUyeListeleAd.Text + "%'";
+            SqlDataAdapter sda = new SqlDataAdapter(query, baglanti);
+            SqlCommandBuilder builder = new SqlCommandBuilder();
+            var ds = new DataSet();
+            sda.Fill(ds);
+            grdUyeleriListele.DataSource = ds.Tables[0]; ;
+            baglanti.Close();
+        }
+
         public UyeleriListele()
         {
             InitializeComponent();
@@ -44,6 +56,19 @@ namespace WindowsFormsApp1
         private void UyeleriListele_Load(object sender, EventArgs e)
         {
             uyeler();
+        }
+
+        private void btnUyeListeleAra_Click(object sender, EventArgs e)
+        {
+            UyeFiltreleme();
+            txtUyeListeleAd.Text = "";
+        }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+            Anasayfa anasayfa = new Anasayfa();
+            anasayfa.Show();
+            this.Hide();
         }
     }
 }

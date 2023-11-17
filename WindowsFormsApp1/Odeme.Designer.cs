@@ -46,6 +46,8 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btnGeri = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cmbOdemeAdSoyad = new System.Windows.Forms.ComboBox();
+            this.txtOdemeAra = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnOdemeAra = new Guna.UI2.WinForms.Guna2GradientButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgOdemeler)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -283,11 +285,52 @@
             this.cmbOdemeAdSoyad.Size = new System.Drawing.Size(170, 24);
             this.cmbOdemeAdSoyad.TabIndex = 55;
             // 
+            // txtOdemeAra
+            // 
+            this.txtOdemeAra.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOdemeAra.DefaultText = "";
+            this.txtOdemeAra.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtOdemeAra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtOdemeAra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOdemeAra.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtOdemeAra.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOdemeAra.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtOdemeAra.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtOdemeAra.Location = new System.Drawing.Point(583, 129);
+            this.txtOdemeAra.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.txtOdemeAra.Name = "txtOdemeAra";
+            this.txtOdemeAra.PasswordChar = '\0';
+            this.txtOdemeAra.PlaceholderText = "";
+            this.txtOdemeAra.SelectedText = "";
+            this.txtOdemeAra.Size = new System.Drawing.Size(170, 28);
+            this.txtOdemeAra.TabIndex = 56;
+            // 
+            // btnOdemeAra
+            // 
+            this.btnOdemeAra.BorderRadius = 8;
+            this.btnOdemeAra.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnOdemeAra.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnOdemeAra.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOdemeAra.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnOdemeAra.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnOdemeAra.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnOdemeAra.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnOdemeAra.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnOdemeAra.ForeColor = System.Drawing.Color.White;
+            this.btnOdemeAra.Location = new System.Drawing.Point(759, 129);
+            this.btnOdemeAra.Name = "btnOdemeAra";
+            this.btnOdemeAra.Size = new System.Drawing.Size(92, 27);
+            this.btnOdemeAra.TabIndex = 57;
+            this.btnOdemeAra.Text = "Ara";
+            this.btnOdemeAra.Click += new System.EventHandler(this.btnOdemeAra_Click);
+            // 
             // Odemeler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1150, 620);
+            this.Controls.Add(this.btnOdemeAra);
+            this.Controls.Add(this.txtOdemeAra);
             this.Controls.Add(this.cmbOdemeAdSoyad);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.guna2CirclePictureBox1);
@@ -330,5 +373,7 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2GradientButton btnGeri;
         private System.Windows.Forms.ComboBox cmbOdemeAdSoyad;
+        private Guna.UI2.WinForms.Guna2TextBox txtOdemeAra;
+        private Guna.UI2.WinForms.Guna2GradientButton btnOdemeAra;
     }
 }
